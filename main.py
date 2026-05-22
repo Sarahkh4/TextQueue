@@ -16,6 +16,8 @@ def generate(topic: str):
         "task_id": task.id,
         "status": "Processing started"
     }
+
+    
 @app.get("/result/{task_id}")
 def get_result(task_id: str):
     task = AsyncResult(task_id, app=celery)

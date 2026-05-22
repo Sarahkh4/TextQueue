@@ -1,4 +1,4 @@
-from celery_worker import celery
+from src.celery_worker import celery
 import time
 
 @celery.task
